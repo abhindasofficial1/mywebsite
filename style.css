@@ -1,0 +1,228 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Alata&family=Gochi+Hand&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Add the following to your CSS file */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* To prevent horizontal scrolling on smaller screens */
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(230, 190, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: none;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: none;
+  
+}
+
+nav a {
+    color:  #ffab08;
+    text-decoration: none;
+    margin: 0 30px;
+    font-weight: 50px;
+    font-size: 30px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px; /* Adjust the font size for smaller screens */
+    margin: 0 30px; 
+
+}
+
+nav a:hover{
+   color: #DA004D;
+}
+section {
+    display: flex;
+    margin: 20px;
+    perspective: 1000px;
+    overflow: hidden;
+    box-shadow: #333;
+}
+
+.profile-image {
+    flex: 1;
+    max-width: 50%; /* Medium size */
+    overflow: hidden;
+    border-top-left-radius: 30px; /* Curved edge */
+    border-bottom-left-radius: 30px; /* Curved edge */
+    box-shadow: #333;
+}
+.top-images{
+    display: flex;
+   
+    align-content: space-between;
+
+}
+.social-links{
+    display:flex;
+}
+ .profile-name{
+    justify-content: center ;
+    align-items: center;
+    display: flex;
+
+ }
+
+    .name{
+        font-size: 200px;
+        letter-spacing: 15px;
+    }
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   margin-left: 120px;
+   flex-direction: row; /* Stack elements vertically on smaller screens */
+    /* align-items: flex-start; Align elements to the start on smaller screens */
+    margin-left: 10px; 
+   
+    
+
+}
+.intro p{
+    margin-top: 20px;
+    font-size: 32.5px;
+    color: rgb(227, 223, 8);
+    margin-left: 180px;
+    font-weight:lighter;
+    font-family: 'Gochi Hand', cursive;
+    word-spacing: 5px;
+    white-space: nowrap;
+
+   
+    
+}
+.intro h1{
+    font-size: 50px;
+    font-family: 'Alata', sans-serif;
+    margin-left: 180px;
+}
+.line{
+color: red;
+}
+
+.profile-image{
+    height: 200%;
+    width: 200%;
+   border-radius: 50%;
+   margin-left: 120px;
+}
+.aboutme{
+    justify-content: center;
+    margin: 200px;
+}
+.aboutme p{
+    font-size: 30px;
+    word-wrap: break-word;
+    line-height: 1.6;
+    font-family: 'DM Sans', sans-serif;
+
+}
+.aboutme h2{
+    font-size: 40px;
+    font-family: 'Alata', sans-serif;
+}
+.aboutme span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer{
+  padding:20px;
+    background-color:#0d0b0b ;
+    color: white;
+    flex-direction: row;
+    display: flex;
+}
+.footer p{
+    font-family: 'DM Sans', sans-serif;
+    word-wrap: none;
+}
+.social-links{
+    justify-content: flex-end;
+    padding-left: 650px;
+  
+}
+.social-links a{
+padding: 3px;
+color: white;
+margin: 0;
+padding-top: 0;
+
+
+
+}
+.fa-brands{
+    padding-left: 50px;
+}
+.fa-instagram:hover{
+   
+    background: -webkit-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+.fa-x-twitter:hover{
+    color: black;
+    border-color: white;
+    -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+
+}
+.fa-linkedin-in:hover{
+    color:#0077b5 ;
+}
+.fa-brands{
+    font-size: 30px;
+}
+.top-images a{
+    width: 50%;
+    height: 50%;
+}
+.fromspace-logo{
+    width: 50%;
+    height: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.aboutme span{
+    color: red;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.name-svg{
+    display: flex;
+    justify-content: center;
+}
+.ab-rule{
+    width: 50%;
+    color: red;
+    background-color: #DA004D;
+    height: 5px;
+    margin-top: 20px;
+}
+.fa-solid{
+    color: red;
+}
