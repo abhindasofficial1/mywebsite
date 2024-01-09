@@ -1,0 +1,38 @@
+.div-1{
+    padding: 100px;
+    padding-bottom: 60px;
+
+
+}
+.div-1 h1{
+    color: #ffab08;
+    font-size: 40px;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+}
+.div-1 p{
+    font-weight: lighter;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size:x-large;
+}
+.div-1 hr{
+  
+    color: red;
+    border-color: red;
+    height: 5px;
+    background-color: red;
+    width: 40%;
+    margin: auto;
+}
+.img-1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+  }

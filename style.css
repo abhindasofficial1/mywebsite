@@ -25,27 +25,34 @@ header {
     background-color: rgb(255, 255, 255);
     color: rgb(230, 190, 31);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: none;
-    margin-top: 30px;
-    padding: 10px;
+    justify-content:first baseline;
+    align-items: flex-end;
+    
+    float: right;
+    background-color: black;
+   width: 100%;
+   position:fixed;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      height: 70px;
+      
+    
 }
 
 nav {
+  float: right;
     display: flex;
     justify-content: flex-end;
     padding-top: none;
-  
+    margin-top: 20px;
 }
 
 nav a {
     color:  #ffab08;
     text-decoration: none;
     margin: 0 30px;
-    font-weight: 50px;
-    font-size: 30px;
-    font-family: 'Pathway Gothic One', sans-serif;
+    
     font-size: 30px; /* Adjust the font size for smaller screens */
     margin: 0 30px; 
 
@@ -64,11 +71,16 @@ section {
 
 .profile-image {
     flex: 1;
-    max-width: 50%; /* Medium size */
+    max-width: 50%; 
     overflow: hidden;
     border-top-left-radius: 30px; /* Curved edge */
     border-bottom-left-radius: 30px; /* Curved edge */
     box-shadow: #333;
+}
+.profile-image-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .top-images{
     display: flex;
@@ -96,8 +108,7 @@ section {
     justify-content: space-between;
    align-items: center;
    margin-left: 120px;
-   flex-direction: row; /* Stack elements vertically on smaller screens */
-    /* align-items: flex-start; Align elements to the start on smaller screens */
+   flex-direction: row; 
     margin-left: 10px; 
    
     
@@ -106,20 +117,22 @@ section {
 .intro p{
     margin-top: 20px;
     font-size: 32.5px;
-    color: rgb(227, 223, 8);
-    margin-left: 180px;
+    color: #ffab08;
+    /* margin-left: 180px; */
     font-weight:lighter;
     font-family: 'Gochi Hand', cursive;
     word-spacing: 5px;
-    white-space: nowrap;
+    white-space:wrap;
+    padding-left: 100px;
 
    
     
 }
 .intro h1{
+    padding-left: 100px;
     font-size: 50px;
     font-family: 'Alata', sans-serif;
-    margin-left: 180px;
+    /* margin-left: 180px; */
 }
 .line{
 color: red;
@@ -129,11 +142,15 @@ color: red;
     height: 200%;
     width: 200%;
    border-radius: 50%;
-   margin-left: 120px;
+   object-fit: contain;
+   /* margin-left: 120px; */
 }
+
 .aboutme{
     justify-content: center;
-    margin: 200px;
+    margin-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .aboutme p{
     font-size: 30px;
@@ -153,8 +170,10 @@ color: red;
   padding:20px;
     background-color:#0d0b0b ;
     color: white;
-    flex-direction: row;
+    /* flex-direction: row; */
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 .footer p{
     font-family: 'DM Sans', sans-serif;
@@ -162,7 +181,7 @@ color: red;
 }
 .social-links{
     justify-content: flex-end;
-    padding-left: 650px;
+    /* padding-left: 650px; */
   
 }
 .social-links a{
@@ -212,17 +231,146 @@ padding-top: 0;
     font-size: 50px;
     font-weight: bolder;
 }
-.name-svg{
+
+
+.fa-solid{
+    color: red;
+}
+
+
+  
+  
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  /* @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  } */
+  /* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  } */
+
+  form {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 100%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  .form{
     display: flex;
     justify-content: center;
-}
-.ab-rule{
+  }
+
+  .rightbottom{
+    display: flex;
+    flex-direction: flex-end;
+    align-items: flex-end;
+  }
+  .ab-rule1{
+    width: 30%;
+    color: red;
+    background-color: #DA004D;
+    height: 5px;
+    margin-top: 20px;
+    margin-left:100px ;
+  }
+  .ab-rule{
     width: 50%;
     color: red;
     background-color: #DA004D;
     height: 5px;
     margin-top: 20px;
+    /* padding-left: 100px; */
 }
-.fa-solid{
-    color: red;
+.mdn-link{
+    color: #DA004D;
 }
+.mdn-link:visited{
+    color: #5851db;
+}
+#myDiv{
+bottom: 80px;
+ right: 0;
+  float: right;
+  position: fixed;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.navbar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 40px;
+  text-align: right;
+
+}
+
+.navbar a {
+  color: orange;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 50px;
+    font-size: 30px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.name-svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abhi-svg{
+  width: 100%;
+  height: auto;
+}
+
