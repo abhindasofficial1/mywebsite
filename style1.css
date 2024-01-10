@@ -7,6 +7,7 @@
 .div-1 h1{
     color: #ffab08;
     font-size: 40px;
+    font-weight: lighter;
     font-family: 'Alata', sans-serif;
     text-align: center;
 }
@@ -17,14 +18,16 @@
     padding-right: 40px;
     padding-top: 30px;
     padding-bottom: 20px;
-    font-weight: bold;
+    font-weight: lighter;
+    font-family: 'DM Sans', sans-serif;
+
     font-size:x-large;
 }
 .div-1 hr{
   
     color: red;
     border-color: red;
-    height: 5px;
+    height: 3px;
     background-color: red;
     width: 40%;
     margin: auto;
@@ -35,4 +38,19 @@
     margin-right: auto;
     width: 40%;
     height: 40%;
+    margin-bottom: 80px;
+  }
+  .img-2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    margin-bottom: 80px;
+    width: 90%;
+    height: 90%;
+  }
+  .img2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work-with-me</title>
+    <link rel="stylesheet" href="./workwithme.css">
+</head>
+<body>
+    <div class="emailform">
+        <form action="#" onsubmit="sendmail(); reset(); return false;" method="post" class="contact">
+            <h2>Work with me</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "abhindasofficial2@gmail.com",
+    Password : "CF59861E19D297C9FE428B98482D4F5F121E",
+    To : 'abhindasofficial2@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
+</body>
+</html>
