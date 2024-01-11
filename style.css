@@ -378,19 +378,13 @@ bottom: 80px;
 
 @media only screen and (max-width: 600px) {
   .intro {
-    /* Adjust layout for smaller screens */
-    flex-direction: column; /* Stack elements vertically */
-    padding-bottom: 100px; /* Reduce bottom padding */
+      flex-direction: column;
+      padding-bottom: 100px; /* You can adjust this value based on your design needs */
+  }
 
-    /* Adjust heading and paragraph styles */
-    h1 {
-      font-size: 36px; /* Reduce heading size */
-      padding-left: 50px; /* Reduce heading padding */
-    }
-    p {
-      font-size: 24px; /* Reduce paragraph size */
-      padding-left: 30px; /* Reduce paragraph padding */
-      word-spacing: 3px; /* Reduce word spacing */
-    }
+  .intro p,
+  .intro h1 {
+      padding-left: 20px; /* Adjust this value as needed */
   }
 }
+
