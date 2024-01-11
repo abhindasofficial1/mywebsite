@@ -376,13 +376,21 @@ bottom: 80px;
   height: auto;
 }
 
-@media screen and (max-width:600px) {
-  h1{
-    font-size: 36px;
-    line-height: 50px;
-  }
-  p{
-    font-size: 20px;
-    line-height: 30px;
+@media only screen and (max-width: 600px) {
+  .intro {
+    /* Adjust layout for smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    padding-bottom: 100px; /* Reduce bottom padding */
+
+    /* Adjust heading and paragraph styles */
+    h1 {
+      font-size: 36px; /* Reduce heading size */
+      padding-left: 50px; /* Reduce heading padding */
+    }
+    p {
+      font-size: 24px; /* Reduce paragraph size */
+      padding-left: 30px; /* Reduce paragraph padding */
+      word-spacing: 3px; /* Reduce word spacing */
+    }
   }
 }
