@@ -107,9 +107,9 @@ section {
     display: flex;
     justify-content: space-between;
    align-items: center;
-   margin-left: 120px;
    flex-direction: row; 
-    margin-left: 10px; 
+   padding-bottom: 200px;
+   
    
     
 
@@ -118,7 +118,6 @@ section {
     margin-top: 20px;
     font-size: 32.5px;
     color: #ffab08;
-    /* margin-left: 180px; */
     font-weight:lighter;
     font-family: 'Gochi Hand', cursive;
     word-spacing: 5px;
@@ -132,7 +131,6 @@ section {
     padding-left: 100px;
     font-size: 50px;
     font-family: 'Alata', sans-serif;
-    /* margin-left: 180px; */
 }
 .line{
 color: red;
@@ -148,7 +146,7 @@ color: red;
 
 .aboutme{
     justify-content: center;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -156,10 +154,11 @@ color: red;
     font-size: 30px;
     word-wrap: break-word;
     line-height: 1.6;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Alata';
+    
 
 }
-.aboutme h2{
+.aboutme h1{
     font-size: 40px;
     font-family: 'Alata', sans-serif;
 }
@@ -368,9 +367,22 @@ bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+
 }
 .abhi-svg{
   width: 100%;
   height: auto;
 }
 
+@media screen and (max-width:600px) {
+  h1{
+    font-size: 36px;
+    line-height: 50px;
+  }
+  p{
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
