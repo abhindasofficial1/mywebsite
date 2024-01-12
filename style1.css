@@ -12,26 +12,22 @@
     text-align: center;
 }
 .div-1 p{
-    font-weight: lighter;
-    text-align: center;
-    padding-left: 2em;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    font-weight: lighter;
-    font-family: 'DM Sans', sans-serif;
-
-    font-size:x-large;
+  font-size: 1.5em;
+  /* word-wrap: break-word; */
+  line-height: 1.6;
+  font-family: 'Alata';
+  text-align: center;
 }
 .div-1 hr{
   
-    color: red;
-    border-color: red;
-    height: 3px;
-    background-color: red;
-    width: 40%;
-    margin: auto;
+  width: 50%;
+  color: red;
+  background-color: #DA004D;
+  height: 5px;
+  margin-top: 20px;
+  margin-left:260px ;
 }
+
 .img-1{
     display: block;
     margin-left: auto;
