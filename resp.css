@@ -17,12 +17,16 @@
         padding: auto;
     }
     .intro p, .div-1 p, .footer p {
-        font-size: 1.3em;
+        font-size: 1em;
         margin: auto;
         padding: auto;
+        overflow-wrap: break-word;
+        max-width: 100%; 
     }
     .aboutme p{
         font-size: 1em;
+        overflow-wrap: break-word;
+        max-width: 100%; 
         
     }
     .profile-image{
@@ -31,7 +35,7 @@
 
     }
     .navbar a{
-     font-size: 2em;
+     font-size: 1em;
     }
     .div-1 hr{
         margin-left: auto;
