@@ -1,11 +1,11 @@
 @media screen and (max-width: 480px) {
     .intro h1, .aboutme h1, .div-1 h1 {
-        font-size: 1em;
+        font-size: 1.5em;
         margin: auto;
         padding: auto;
     }
     .aboutme p, .intro p, .div-1 p, .footer p {
-        font-size: 0.5em;
+        font-size: 1em;
         margin: auto;
         padding: auto;
     }
