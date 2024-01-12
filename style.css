@@ -12,6 +12,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
 /* Add the following to your CSS file */
 body {
     width: 100%;
@@ -31,7 +35,7 @@ header {
     float: right;
     background-color: black;
    width: 100%;
-   position:fixed;
+   position:sticky;
       left: 0px;
       right: 0px;
       top: 0px;
@@ -46,6 +50,7 @@ nav {
     justify-content: flex-end;
     padding-top: none;
     margin-top: 20px;
+    position: sticky;
 }
 
 nav a {
@@ -55,6 +60,7 @@ nav a {
     
     font-size: 30px; /* Adjust the font size for smaller screens */
     margin: 0 30px; 
+    position: sticky;
 
 }
 
@@ -376,15 +382,19 @@ bottom: 80px;
   height: auto;
 }
 
-@media only screen and (max-width: 600px) {
-  .intro {
-      flex-direction: column;
-      padding-bottom: 100px; /* You can adjust this value based on your design needs */
-  }
 
-  .intro p,
-  .intro h1 {
-      padding-left: 20px; /* Adjust this value as needed */
-  }
+.hidden{
+transform: translateX(-100%);
+filter: blur(5px);
+transition: all 1s;
 }
-
+.show{
+transform: translateX(0);
+  filter: blur(0px);
+  position: static;
+}
+.navbar{
+  pointer-events: auto;
+  z-index: 1000; 
+  position: sticky; 
+}

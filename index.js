@@ -1,9 +1,18 @@
-function openModal() {
-    document.getElementById("myModal").style.display = "block";
-    setTimeout(closeModal, 1000); 
-  }
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
 
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
 
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+document.body.addEventListener('click', function (event) {
+  if (event.target.closest('.navbar')) {
+    // Handle navbar click
   }
+});
