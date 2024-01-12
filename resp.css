@@ -7,19 +7,19 @@
     padding: auto;
     margin: auto;
    }
-   .div-1{
+   /* .div-1{
     padding: auto;
     margin: auto;
-   }
-    .intro h1, .aboutme h1, .div-1 h1 {
+   } */
+    /* .intro h1, .aboutme h1, .div-1 h1 {
         font-size: 2em;
         margin: auto;
         padding: auto;
-    }
+    } */
     .intro p, .div-1 p, .footer p {
         font-size: 1em;
-        margin: auto;
-        padding: auto;
+        /* margin: auto;
+        padding: auto; */
         overflow-wrap: break-word;
         max-width: 100%; 
     }
