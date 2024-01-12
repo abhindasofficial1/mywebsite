@@ -20,12 +20,12 @@
         font-size: 0.5em;
         /* margin: auto;
         padding: auto; */
-        overflow-wrap: break-word;
+       
         max-width: 100%; 
     }
     .aboutme p{
         font-size: 1em;
-        overflow-wrap: break-word;
+       
         max-width: 100%; 
         
     }
