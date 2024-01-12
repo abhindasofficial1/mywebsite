@@ -11,20 +11,20 @@
     padding: auto;
     margin: auto;
    } */
-    /* .intro h1, .aboutme h1, .div-1 h1 {
+    .intro h1, .aboutme h1, .div-1 h1 {
         font-size: 2em;
         margin: auto;
         padding: auto;
-    } */
+    }
     .intro p, .div-1 p, .footer p {
-        font-size: 0.5em;
+        font-size: 1em;
         /* margin: auto;
         padding: auto; */
        
         max-width: 100%; 
     }
     .aboutme p{
-        font-size: 1em;
+        font-size: 0.7em;
        
         max-width: 100%; 
         
@@ -35,7 +35,7 @@
 
     }
     .navbar a{
-     font-size: 0.5em;
+     font-size: 0.7em;
     }
     .div-1 hr{
         margin-left: auto;
