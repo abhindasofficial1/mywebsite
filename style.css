@@ -25,25 +25,6 @@ body {
 }
 
 
-header {
-    background-color: rgb(255, 255, 255);
-    color: rgb(230, 190, 31);
-    display: flex;
-    justify-content:first baseline;
-    align-items: flex-end;
-    
-    float: right;
-    background-color: black;
-   width: 100%;
-   position:sticky;
-      left: 0px;
-      right: 0px;
-      top: 0px;
-      height: 70px;
-      
-    
-}
-
 nav {
   float: right;
     display: flex;
@@ -75,14 +56,14 @@ section {
     box-shadow: #333;
 }
 
-.profile-image {
+/* .profile-image {
     flex: 1;
     max-width: 50%; 
     overflow: hidden;
     border-top-left-radius: 30px; /* Curved edge */
     border-bottom-left-radius: 30px; /* Curved edge */
     box-shadow: #333;
-}
+} */
 .profile-image-div{
   display: flex;
   justify-content: center;
@@ -112,7 +93,7 @@ section {
 .intro{
     display: flex;
     justify-content: space-between;
-   align-items: center;
+   /* align-items: center; */
    flex-direction: row; 
    padding-bottom: 200px;
    
@@ -122,12 +103,13 @@ section {
 }
 .intro p{
     margin-top: 20px;
-    font-size: 32.5px;
+    font-size: 2em;
     color: #ffab08;
     font-weight:lighter;
     font-family: 'Gochi Hand', cursive;
     word-spacing: 5px;
-    white-space:wrap;
+    word-wrap: break-word;
+    /* white-space:wrap; */
     padding-left: 100px;
 
    
@@ -135,7 +117,7 @@ section {
 }
 .intro h1{
     padding-left: 100px;
-    font-size: 50px;
+    font-size: 3em;
     font-family: 'Alata', sans-serif;
 }
 .line{
@@ -143,8 +125,8 @@ color: red;
 }
 
 .profile-image{
-    height: 200%;
-    width: 200%;
+    height: 20%;
+    width: 20%;
    border-radius: 50%;
    object-fit: contain;
    /* margin-left: 120px; */
@@ -157,7 +139,7 @@ color: red;
     padding-right: 100px;
 }
 .aboutme p{
-    font-size: 30px;
+    font-size: 2em;
     word-wrap: break-word;
     line-height: 1.6;
     font-family: 'Alata';
@@ -165,7 +147,7 @@ color: red;
 
 }
 .aboutme h1{
-    font-size: 40px;
+    font-size: 3em;
     font-family: 'Alata', sans-serif;
 }
 .aboutme span{
@@ -183,6 +165,7 @@ color: red;
 .footer p{
     font-family: 'DM Sans', sans-serif;
     word-wrap: none;
+    font-size: 1em;
 }
 .social-links{
     justify-content: flex-end;
@@ -365,7 +348,7 @@ bottom: 80px;
   text-decoration: none;
   margin: 0 15px;
   font-weight: 50px;
-    font-size: 30px;
+    font-size: 3em;
     font-family: 'Pathway Gothic One', sans-serif;
 }
 
